@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <div className={styles.nav}>
             <div className={styles.navbar}>
-                <h2 className={styles.logo}>DJwhoCODES</h2>
+                <Link to='/' onClick={() => handleMenuClick("home")} className={menu === "home" ? styles.active : ""}><h2 className={styles.logo}>DJwhoCODES</h2></Link>
                 <div className={styles.navbarMenu}>
                     <Link to='/' onClick={() => handleMenuClick("home")} className={menu === "home" ? styles.active : ""}><span className={styles.navList}>Home</span></Link>
                     <a href='#menuCards' onClick={() => handleMenuClick("menu")} className={menu === "menu" ? styles.active : ""}><span className={styles.navList}>Menu</span></a>
