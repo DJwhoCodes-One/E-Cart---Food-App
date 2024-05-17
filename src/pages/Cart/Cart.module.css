@@ -1,0 +1,154 @@
+.cart {
+  margin-top: 100px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.cartItemsTitle {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: grey;
+  font-size: 1vw;
+}
+
+.displayCartItem {
+  margin: 10px 0px;
+  color: black;
+}
+
+.displayCartItem img {
+  width: 4vw;
+  border-radius: 4px;
+}
+
+.cartItems hr {
+  height: 2px;
+  border: none;
+  background-color: #5c605c7e;
+  margin-bottom: 1vw;
+}
+
+.cartItem hr {
+  height: 2px;
+  border: none;
+  background-color: #e2e2e2;
+  margin-bottom: 0.5vw;
+}
+
+.cross {
+  cursor: pointer;
+  color: red;
+  font-weight: 700;
+  font-size: 1.3vw;
+}
+
+.total {
+  background-color: rgb(198, 253, 210);
+  border-radius: 10px;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30vmax;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.totalDesc {
+  font-weight: 700;
+}
+
+.cartItemsHeading {
+  font-weight: 700;
+  font-size: 1.3vw;
+}
+
+.cartItemsHeadingValues {
+  font-size: 1.3vw;
+}
+
+@media (max-width: 900px) {
+  .cartItemsHeading {
+    font-weight: 700;
+    font-size: 1.4vw;
+  }
+
+  .cartItemsHeadingValues {
+    font-size: 1.4vw;
+  }
+
+  .cross {
+    font-size: 1.4vw;
+  }
+
+  .totalDesc,
+  .amount {
+    font-size: 2vw;
+  }
+
+  .total {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .cartItemsHeading {
+    font-weight: 700;
+    font-size: 1.7vw;
+  }
+  .cartItemsHeadingValues {
+    font-size: 1.7vw;
+  }
+  .cross {
+    font-size: 1.7vw;
+  }
+
+  .totalDesc,
+  .amount {
+    font-size: 2.3vw;
+  }
+
+  .total {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .cartItemsHeading {
+    font-weight: 700;
+    font-size: 2vw;
+  }
+  .cartItemsHeadingValues {
+    font-size: 2vw;
+  }
+  .cross {
+    font-size: 2vw;
+  }
+  .totalDesc,
+  .amount {
+    font-size: 2.8vw;
+  }
+
+  .total {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .cartItemsHeading {
+    font-weight: 700;
+    font-size: 2.4vw;
+  }
+  .cartItemsHeadingValues {
+    font-size: 2.4vw;
+  }
+  .cross {
+    font-size: 2.4vw;
+  }
+  .totalDesc,
+  .amount {
+    font-size: 3.2vw;
+  }
+}
