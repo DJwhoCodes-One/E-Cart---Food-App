@@ -44,8 +44,8 @@ const Navbar = () => {
                     <div className="cart">
                         <Badge badgeContent={getCartData.cart?.length} color="success">
                             <div>
-                                <Link to='/cart' onClick={() => handleMenuClick("about")} className={menu === "about" ? styles.active : ""}><span className={styles.navList}>
-                                    <i className={`fa-solid fa-cart-shopping fa-xl ${styles.cartIcon}`} style={{ color: "rgba(50, 255, 50,1)" }}></i></span></Link>
+                                <Link to='/cart' onClick={() => handleMenuClick("about")} className={menu === "about" ? styles.active : ""}>
+                                    <i className={`fa-solid fa-cart-shopping fa-xl ${styles.cartIcon}`} style={{ color: "rgba(50, 255, 50,1)" }}></i></Link>
                             </div>
                         </Badge>
                     </div>
